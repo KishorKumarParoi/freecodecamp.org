@@ -1,3 +1,5 @@
+** start of undefined **
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +20,7 @@
 
         <main>
             <form action="" id="survey-form">
-                <fieldset class="basic-info">
+                <fieldset>
                     <label for="name" id="name-label">Name <input type="text" name="name" id="name"
                             placeholder="Enter your name" required></label>
                     <label for="email" id="email-label">Email <input type="email" name="email" id="email"
@@ -27,7 +29,7 @@
                             min="10" max="99" placeholder="Age"></label>
                 </fieldset>
 
-                <fieldset class="occupation">
+                <fieldset>
                     <label for="dropdown">Which option best describes your current role?
                         <select name="dropdown" id="dropdown">
                             <option value="0">Select current role</option>
@@ -40,8 +42,8 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="suggestion">
-                    <h2> Would you recommend freeCodeCamp to a friend?</h2>
+                <fieldset>
+                    Would you recommend freeCodeCamp to a friend?
                     <label for="definitely">
                         <input type="radio" name="friend" id="definitely" value="Definitely"> Definitely
                     </label>
@@ -53,7 +55,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="feature">
+                <fieldset>
                     <label for="favorite-feature">
                         What is your favorite feature of freeCodeCamp?
                         <select name="favorite-feature" id="favorite-feature">
@@ -66,7 +68,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="projects">
+                <fieldset>
                     What would you like to see improved? (Check all that apply)
                     <label for="front-end-projects">
                         <input type="checkbox" name="front-end-projects" id="front-end-projects"
@@ -120,7 +122,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="comment">
+                <fieldset>
                     <label for="comments">
                         Any comments or suggestions?
                         <textarea name="comments" id="comments" cols="30" rows="3"
@@ -131,12 +133,16 @@
                 <input id="submit" type="submit" value="Submit">
             </form>
         </main>
-
-        <footer>
-            <h2>ALL Rights Preserved @kkp</h2>
-            <h3>contact @kkp</h3>
-        </footer>
     </div>
 </body>
 
 </html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+
