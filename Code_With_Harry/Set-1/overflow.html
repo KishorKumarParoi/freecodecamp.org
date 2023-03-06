@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .para {
+            width: 200px;
+            height: 20px;
+            border: 2px solid blue;
+            padding: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .para1 {
+            width: 200px;
+            height: 20px;
+            border: 2px solid blue;
+            padding: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        .para1:hover {
+            overflow: visible;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's Learn about Overflow</h1>
+    <p class="para" title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ex facere quis odit obcaecati!
+        Fugit sunt quos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ex facere quis odit
+        obcaecati!
+        Fugit sunt quos
+        exercitationem et velit odit laborum iste reiciendis cum, reprehenderit repudiandae. Excepturi harum et quis
+        quasi natus voluptatum doloremque fugiat tempore molestiae quam aut praesentium debitis dolor itaque nesciunt
+        quas, laudantium sunt minima rem eos officia placeat. Beatae officia mollitia facere error esse veniam,
+        blanditiis quibusdam non odio accusamus rem rerum. Officia culpa, iste minus laboriosam sapiente veritatis neque
+        illo reprehenderit sunt soluta saepe earum, sequi quis repellat iure dolor sit quam perspiciatis enim eius
+        excepturi! Dolorum repudiandae debitis nulla in exercitationem blanditiis deserunt?</p>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum sequi nulla asperiores
+        consequuntur ipsa, est, illum, reprehenderit exercitationem accusamus doloribus possimus incidunt natus iusto
+        dolor quisquam reiciendis explicabo. Porro consequuntur eveniet dicta dolores corporis itaque, consequatur
+        aliquam accusamus architecto ex vitae ratione qui est natus sunt beatae, ipsam error et minima, facere nostrum
+        voluptates laboriosam? Aut, enim accusantium veritatis ratione facere quis voluptates ab voluptatem. Esse
+        deleniti sit nesciunt! Debitis praesentium deleniti beatae, distinctio suscipit nesciunt quo ad, est nobis
+        maiores dolores in at doloribus, sunt consectetur tenetur assumenda neque dolor minus itaque quasi vero. Nihil,
+        dolorum incidunt? Tempora?</p>
+</body>
+
+</html>
