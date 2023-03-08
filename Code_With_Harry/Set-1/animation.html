@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        @keyframes example {
+            0% {
+                left: -480px;
+                top: 35px;
+            }
+
+            10% {
+                left: -200px;
+                top: 85px;
+            }
+
+            20% {
+                left: 0px;
+                top: 145px;
+            }
+
+            30% {
+                left: 200px;
+                top: 225px;
+            }
+
+            40% {
+                left: 300px;
+                top: 230px;
+            }
+
+            50% {
+                left: 350px;
+                top: 230px;
+            }
+
+        }
+
+        @keyframes sachin {}
+
+        .cricket {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .bat-ball-width {
+            width: 20%;
+        }
+
+        .animation {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            animation: example 5s ease-in-out .5s infinite normal forwards;
+            z-index: 1;
+        }
+
+        .bat img {
+            width: 310px;
+            transform: rotate(30deg);
+            transition: transform 5s
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's See Sachin and Malinga Playing Cricket</h1>
+    <div class="cricket">
+        <div class="ball bat-ball-width">
+            <img src="malinga.webp" alt="">
+        </div>
+        <div class="animation">
+        </div>
+        <div class="bat bat-ball-width">
+            <img src="sachin.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>

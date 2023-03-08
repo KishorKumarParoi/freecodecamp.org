@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .pep {
+            width: 400px;
+            height: 300px;
+            border: 2px solid rebeccapurple;
+            background: linear-gradient(red, green, tomato);
+        }
+
+        .pep:hover {
+            width: 500px;
+            height: 500px;
+            transform: skew(2, 3) rotate(180deg);
+            transition: width 3s ease-in-out, height 3s linear, transform 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's Learn about Transition</h1>
+    <div class="pep"></div>
+</body>
+
+</html>
