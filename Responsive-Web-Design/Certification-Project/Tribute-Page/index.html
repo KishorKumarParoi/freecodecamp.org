@@ -10,21 +10,62 @@
             font-weight: 100;
             margin-top: 2%;
         }
+
+        figcaption{
+            font-size: .8em;
+            margin: 2% 1%;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        li{
+            font-weight: 100;
+            font-size: .8em;
+        }
+
+     @media (max-width: 768px) {
+        .header h5{
+            font-size: 18px;
+        }
+        figcaption{
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .img-div img{
+            width: 100%;
+            margin: 2%;
+        }
+
+        li{
+            font-size: 23px;
+            word-spacing: 10px;
+        }
+
+        .content h2{
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        blockquote, .footer strong{
+            font-size: 20px;
+        }
+     }
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <main id="main">
         <div class="container">
             <div class="header">
-                <h1>Dr. Norman Borlaug</h1>
+                <h1 id="title">Dr. Norman Borlaug</h1>
                 <h5>The man who saved a billion lives</h5>
             </div>
-            <div class="img-div">
-                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.">
-                <figcaption>Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his
+            <div class="img-div" id="img-div">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" id="image" alt="Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.">
+                <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his
                 life-long war on hunger.</figcaption>
             </div>
-            <div class="content">
+            <div class="content" id="tribute-info">
                 <h2>Here's a time line of Dr. Borlaug's life:</h2> <br>
                 
                 <ul class="list">
@@ -52,7 +93,7 @@
                     we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've
                     been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting
                     the best breeds."</li> <br>
-                    <li><strong>2009</strong>- dies at the age of 95.</li> <br>
+                    <li><strong>2009</strong> - dies at the age of 95.</li> <br>
                 </ul>
 
                 <div class="quote">
@@ -64,9 +105,9 @@
                 </div>
             </div>
             <div class="footer">
-                <strong>If you have time, you should read more about this incredible human being on his <a href="https:www.wikipedia.com">Wikipedia entry.</a> </strong>
+                <strong>If you have time, you should read more about this incredible human being on his <a target="_blank" href="https://en.wikipedia.org/wiki/Norman_Borlaug" id="tribute-link" >Wikipedia entry.</a> </strong>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>

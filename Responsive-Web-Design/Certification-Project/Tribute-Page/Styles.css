@@ -7,9 +7,10 @@
 body{
     background-color: #fff;
     font-size: calc(1vw + .5em);
+    /* text-align: center; */
 }
 
-.wrapper{
+#main{
     margin: 2% 2%;
     background-color: #eee;
 }
@@ -20,17 +21,21 @@ body{
 }
 
 .img-div {
-    display: flex;
+    /* display: blo;
     flex-basis: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    /* text-align: center; */
     background-color: #fff;
-    margin: 0 2% ;
+    margin: 0 auto ;
 }
 
 .img-div img{
+    display: block;
+    max-width: 100%;
     width: 80%;
+    margin: auto;
 }
 
 .content{
