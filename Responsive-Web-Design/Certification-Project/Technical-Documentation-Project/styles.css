@@ -5,30 +5,29 @@
 }
 
 #main-doc{
+    /* position: fixed; */
     display: grid;
+    /* border: 5px solid salmon; */
     grid-template-columns: repeat(12,1fr);
     grid-template-areas: 
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    "n n c c c c c c c c c c"
-    ;
+    'n n c c c c c c c c c c c';
 }
 
 .content{
     grid-area: c;
+    padding: 20px;
+    border: 2px solid black ;
 }
 
 .nav-bar{
     grid-area: n;
+    position: fixed;
+    border: 5px solid black;
+    height: 100%;
+    line-height: 3;
+    padding: 20px;
+}
+
+.nav-bar li{
+    font-size: 18px;
 }
