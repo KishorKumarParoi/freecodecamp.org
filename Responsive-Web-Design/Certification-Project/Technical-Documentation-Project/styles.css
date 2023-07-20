@@ -5,29 +5,22 @@
 }
 
 #main-doc{
-    /* position: fixed; */
     display: grid;
-    /* border: 5px solid salmon; */
-    grid-template-columns: repeat(12,1fr);
-    grid-template-areas: 
-    'n n c c c c c c c c c c c';
+    grid-template-columns: repeat(12, 1fr);
 }
-
-.content{
-    grid-area: c;
-    padding: 20px;
-    border: 2px solid black ;
-}
-
-.nav-bar{
-    grid-area: n;
+#navbar{
+    grid-column: 1 / span 2;
+    line-height: 2;
     position: fixed;
-    border: 5px solid black;
     height: 100%;
-    line-height: 3;
-    padding: 20px;
+    border-right: 2px solid;
 }
 
-.nav-bar li{
-    font-size: 18px;
+#navbar li{
+    border-bottom: solid;
+    padding: 0 10px;
+}
+
+#content{
+    grid-column: 4 / span 9;
 }
