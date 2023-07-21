@@ -32,6 +32,11 @@ a{
     color: black;
 }
 
+#js-documentation{
+    font-size: 30px;
+    padding-left: 10px;
+}
+
 #navbar li{
     border-top: solid;
     position: relative;
