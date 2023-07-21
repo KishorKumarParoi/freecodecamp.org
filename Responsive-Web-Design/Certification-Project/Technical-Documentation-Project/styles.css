@@ -8,6 +8,7 @@ html, body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-width: 280px;
     line-height: 2.5;
+    margin: 0 10px;
 }
 #main-doc{
     display: grid;
@@ -25,6 +26,15 @@ html, body{
     overflow-y: auto;
     overflow-x: hidden;
     border-right: 2px solid;
+}
+
+code{
+    display: block;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px;
+    line-height: 2;
+    border-radius: 5px;
 }
 
 a{
@@ -54,5 +64,20 @@ article ul{
 }
 
 #content{
-    grid-column: 4 / span 9;
+    grid-column: 3 / span 9;
+    /* border: 2px solid ; */
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.mdn a{
+    color: blue;
+}
+
+.mdn a:active{
+    color: red;
+}
+
+.mdn a :visited{
+    color: purple;
 }
