@@ -32,6 +32,10 @@ a{
     color: black;
 }
 
+header{
+    font-size: 2em;
+}
+
 #js-documentation{
     font-size: 30px;
     padding-left: 10px;
