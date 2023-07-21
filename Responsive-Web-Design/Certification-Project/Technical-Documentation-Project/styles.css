@@ -28,6 +28,13 @@ html, body{
     border-right: 2px solid;
 }
 
+#content {
+    grid-column: 3 / span 9;
+    /* border: 2px solid ; */
+    padding: 20px;
+    margin-left: 50px;
+}
+
 code{
     display: block;
     background-color: #f7f7f7;
@@ -63,12 +70,6 @@ article ul{
 
 }
 
-#content{
-    grid-column: 3 / span 9;
-    /* border: 2px solid ; */
-    padding: 20px;
-    margin-left: 50px;
-}
 
 .mdn a{
     color: blue;
