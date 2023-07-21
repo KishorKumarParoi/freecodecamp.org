@@ -200,6 +200,9 @@
                     you
                     can refer to this
                     variable from an iframe as parent.phoneNumber.</p>
+            </section>
+
+            <section id="constants">
                 <header>Constants</header>
                 <p>You can create a read-only, named constant with the const keyword. The syntax of a constant
                     identifier is
@@ -208,8 +211,8 @@
                     alphabetic, numeric,
                     or underscore characters.</p>
                 <code>
-                           const PI = 3.14;
-                          </code>
+                                           const PI = 3.14;
+                                          </code>
                 <p>A constant cannot change value through assignment or be re-declared while the script is running. It
                     has
                     to be
@@ -221,18 +224,18 @@
                 <p>You cannot declare a constant with the same name as a function or variable in the same scope. For
                     example:</p>
                 <code>
-                    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-                    WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-                    //statements }
-                            </code>
+                                    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+                                    WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+                                    //statements }
+                                            </code>
 
                 <p>However, object attributes are not protected, so the following statement is executed without
                     problems.
                 </p>
                 <code>
-                    const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-                    "otherValue";
-                            </code>
+                                    const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+                                    "otherValue";
+                                            </code>
             </section>
 
             <section id="data-types">
@@ -346,33 +349,35 @@
                 </ul>
                 </p>
                 <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
+            </section>
 
-                        <header>Function declarations</header>
-                        <p>A function definition (also called a function declaration, or function statement) consists of
-                            the
-                            function keyword,
-                            followed by:
-                        <ul>
-                            <li>The name of the function.</li>
-                            <li>A list of arguments to the function, enclosed in parentheses and separated by commas.
-                            </li>
-                            <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.
-                            </li>
-                        </ul>
+            <section id="function-declarations">
+                <header>Function declarations</header>
+                <p>A function definition (also called a function declaration, or function statement) consists of
+                    the
+                    function keyword,
+                    followed by:
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas.
+                    </li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.
+                    </li>
+                </ul>
                 </p>
 
                 <p>For example, the following code defines a simple function named square:</p>
                 <code>
-                function square(number) { return number * number; }
-                                    </code>
+                                function square(number) { return number * number; }
+                                                    </code>
                 <p>The function square takes one argument, called number. The function consists of one statement
                     that says to return the
                     argument of the function (that is, number) multiplied by itself. The return statement specifies
                     the value returned by
                     the function.</p>
                 <code>
-                                return number * number;
-                            </code>
+                                                return number * number;
+                                            </code>
                 <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the
                     function, but if
                     the function changes the value of the parameter, this change is not reflected globally or in the
