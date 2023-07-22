@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: repeat(12, 1fr); */
+            grid-template-areas:
+                "h h h h h h h h h h h h"
+                "m m m m m m c c c c c c"
+                "f f f f f f f f f f f f"
+            ;
+            grid-gap: 10px;
+        }
+
+        .box-1 {
+            grid-area: h;
+            border: 2px solid;
+            background-color: cyan;
+        }
+
+        .box-2 {
+            grid-area: m;
+            border: 2px solid;
+            background-color: lightcoral;
+
+        }
+
+        .box-3 {
+            grid-area: c;
+            border: 2px solid;
+            background-color: lime;
+
+        }
+
+        .box-4 {
+            grid-area: f;
+            border: 2px solid;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="box-1">Home</div>
+            <div class="box-2">Menu</div>
+            <div class="box-3">Content</div>
+            <div class="box-4">Footer</div>
+        </div>
+    </div>
+</body>
+
+</html>

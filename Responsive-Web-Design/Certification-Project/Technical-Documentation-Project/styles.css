@@ -12,25 +12,37 @@ html, body{
 }
 #main-doc{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-rows: auto; */
+    grid-template-areas: 
+    "n n n c c c c c c c c c"
+    ;
 }
+
 #navbar{
+    grid-area: n;
     position: fixed;
-    grid-column: span 3;
+    /* grid-column: span 3; */
     line-height: 2;
-    min-width: 280px;
+    /* min-width: 280px; */
     top: 0;
     left: 0;
-    width: 300px;
+    width: 20%;
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     border-right: 2px solid;
+    z-index: 1;
 }
 
 #content {
-    grid-column: 3 / span 9;
-    /* border: 2px solid ; */
+    grid-area: c;
+    position: absolute;
+    width: 80%;
+    /* grid-column: 3 / span 9; */
     padding: 20px;
     margin-left: 50px;
 }
