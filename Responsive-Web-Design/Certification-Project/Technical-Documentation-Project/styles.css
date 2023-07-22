@@ -10,24 +10,27 @@ html, body{
     line-height: 2.5;
     margin: 0 10px;
 }
+
+/*
 #main-doc{
     display: grid;
     height: 100%;
     width: 100%;
-    /* position: absolute; */
-    /* grid-template-columns: repeat(12, 1fr); */
-    /* grid-template-rows: auto; */
+    position: absolute;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     grid-template-areas: 
     "n n n c c c c c c c c c"
     ;
 }
 
+
 #navbar{
     grid-area: n;
     position: fixed;
-    /* grid-column: span 3; */
+    grid-column: span 3;
     line-height: 2;
-    /* min-width: 280px; */
+    min-width: 280px;
     top: 0;
     left: 0;
     width: 20%;
@@ -42,7 +45,7 @@ html, body{
     grid-area: c;
     position: absolute;
     width: 80%;
-    /* grid-column: 3 / span 9; */
+    grid-column: 3 / span 9;
     padding: 20px;
     margin-left: 50px;
 }
@@ -82,6 +85,8 @@ article ul{
 
 }
 
+body{
+    bord
 
 .mdn a{
     color: blue;
@@ -93,4 +98,28 @@ article ul{
 
 .mdn a :visited{
     color: purple;
+}
+*/
+
+.main-section{
+    border: 2px solid red;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "n n m m m m";
+    grid-gap: 20px;
+    width: 100%;
+}
+
+#navbar{
+    grid-area: n;
+    border: 2px solid ;
+    padding: 10px;
+    text-align: center
+}
+
+#main-doc{
+    grid-area: m;
+    border: 2px solid red;
+    text-align: center;
 }
