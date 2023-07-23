@@ -16,15 +16,19 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 .container {
   display: grid;
-  grid-template-areas: "n m m m m m";
+  grid-template-areas: "n n m m m m";
   width: 100vw;
   height: 100vh;
+  margin: 0 auto;
 }
 
 #navbar {
   position: fixed;
+  /* top: 0; */
+  /* left: 0; */
   grid-area: n;
   width: 20vw;
   height: 100vh;
@@ -85,4 +89,24 @@ section article {
 
 section li {
   margin: 15px 0px 0px 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar {
+    width: 30vw;
+  }
+
+  #main-doc {
+    margin-left: calc(31vw);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #navbar {
+    width: 40vw;
+  }
+
+  #main-doc {
+    margin-left: calc(41vw);
+  }
 }
