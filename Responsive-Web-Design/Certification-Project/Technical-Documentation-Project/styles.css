@@ -6,120 +6,42 @@
 
 html, body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-width: 280px;
-    line-height: 2.5;
-    margin: 0 10px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 2;
 }
 
-/*
-#main-doc{
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
     display: grid;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
     grid-template-areas: 
-    "n n n c c c c c c c c c"
-    ;
+    "n m m m m m";
+    width: 100vw;
+    height: 100vh;
 }
-
 
 #navbar{
     grid-area: n;
-    position: fixed;
-    grid-column: span 3;
-    line-height: 2;
-    min-width: 280px;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 100%;
-    overflow-y: auto;
+    width: 20vw;
+    height: auto;
+    border-right: solid;
+    position: sticky;
+    top: 200px;
+    overflow-y: scroll;
     overflow-x: hidden;
-    border-right: 2px solid;
-    z-index: 1;
-}
-
-#content {
-    grid-area: c;
-    position: absolute;
-    width: 80%;
-    grid-column: 3 / span 9;
-    padding: 20px;
-    margin-left: 50px;
-}
-
-code{
-    display: block;
-    background-color: #f7f7f7;
-    padding: 20px;
-    margin: 10px;
-    line-height: 2;
-    border-radius: 5px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-header{
-    font-size: 2em;
-}
-
-article ul{
-    margin-left: 50px;
-}
-
-#js-documentation{
-    font-size: 30px;
-    padding-left: 10px;
 }
 
 #navbar li{
     border-top: solid;
-    position: relative;
-    padding: 5px 10px;
-    width: 100%;
-
-}
-
-body{
-    bord
-
-.mdn a{
-    color: blue;
-}
-
-.mdn a:active{
-    color: red;
-}
-
-.mdn a :visited{
-    color: purple;
-}
-*/
-
-.main-section{
-    border: 2px solid red;
-    height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "n n m m m m";
-    grid-gap: 20px;
-    width: 100%;
-}
-
-#navbar{
-    grid-area: n;
-    border: 2px solid ;
     padding: 10px;
-    text-align: center
 }
 
 #main-doc{
-    grid-area: m;
-    border: 2px solid red;
-    text-align: center;
+    width: 80vw;
+    padding: 50px;
+    padding-top: 0;
+    height: auto;
 }
