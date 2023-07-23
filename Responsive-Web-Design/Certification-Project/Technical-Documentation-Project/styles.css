@@ -1,47 +1,88 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0 auto;
-    font-size: 15px;
-    line-height: 2;
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 2;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+  width: 100vw;
+  height: 100vh;
 }
-.container{
-    display: grid;
-    grid-template-areas: 
-    "n m m m m m";
-    width: 100vw;
-    height: 100vh;
-}
-
-#navbar{
-    grid-area: n;
-    width: 20vw;
-    height: auto;
-    border-right: solid;
-    position: sticky;
-    top: 200px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+.container {
+  display: grid;
+  grid-template-areas: "n m m m m m";
+  width: 100vw;
+  height: 100vh;
 }
 
-#navbar li{
-    border-top: solid;
-    padding: 10px;
+#navbar {
+  position: fixed;
+  grid-area: n;
+  width: 20vw;
+  height: 100vh;
+  border-right: solid;
 }
 
-#main-doc{
-    width: 80vw;
-    padding: 50px;
-    padding-top: 0;
-    height: auto;
+#navbar ul {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+}
+
+#navbar a {
+  display: block;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+code {
+  display: block;
+  text-align: left;
+  position: relative;
+  padding: 15px;
+  margin: 5px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: calc(21vw);
+  padding: 10px;
+  height: auto;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: calc(1vw + 0.5em);
+}
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
 }
