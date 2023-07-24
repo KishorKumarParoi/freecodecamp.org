@@ -1,0 +1,121 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 50%;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  background-color: #f1c40f;
+}
+
+.mail {
+  text-align: center;
+  line-height: 2;
+}
+
+#email {
+  padding: 7px 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 20vw;
+}
+
+.premium-material,
+.fast-shopping,
+.quality-assurance {
+  display: flex;
+  margin: 50px;
+}
+
+.icon {
+  width: 20vw;
+}
+
+.content {
+  width: 80vw;
+}
+
+#how-it-works {
+  text-align: center;
+}
+
+#pricing {
+  margin: 100px auto;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.item {
+  border: 1.5px solid;
+  width: 20vw;
+  text-align: center;
+  height: 35vh;
+  line-height: 2;
+}
+
+.title {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  margin: 0 auto;
+  background-color: #ddd;
+  text-align: end;
+}
+
+.about {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about h3 {
+  padding: 0 10px;
+}
