@@ -7,6 +7,7 @@
 
 body {
   background-color: #eee;
+  margin: 0 auto;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -17,7 +18,6 @@ body {
   padding: 0 20px;
   width: 100vw;
   display: flex;
-  /* font-size: 20px; */
   justify-content: space-around;
   background-color: #eee;
   align-items: center;
@@ -65,6 +65,7 @@ nav > ul {
 }
 
 .mail {
+  margin-top: 100px;
   text-align: center;
   line-height: 2;
 }
@@ -73,7 +74,7 @@ nav > ul {
   padding: 7px 20px;
   border-radius: 5px;
   margin-bottom: 15px;
-  width: 20vw;
+  width: 40vw;
 }
 
 .premium-material,
@@ -84,11 +85,16 @@ nav > ul {
 }
 
 .icon {
-  width: 20vw;
+  width: 40%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
 }
 
 .content {
-  width: 80vw;
+  width: 60vw;
 }
 
 #how-it-works {
@@ -98,21 +104,21 @@ nav > ul {
 #pricing {
   margin: 100px auto;
   display: flex;
-
   justify-content: space-around;
 }
 
 .item {
-  border: 1.5px solid;
+  border: 2px solid;
   width: 20vw;
+  padding: 20px;
   text-align: center;
-  height: 35vh;
   line-height: 2;
 }
 
 .title {
   background-color: #ddd;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -129,4 +135,27 @@ nav > ul {
 
 .about h3 {
   padding: 0 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  #video {
+    width: 80%;
+    height: 50%;
+  }
+  #email {
+    width: 50vw;
+  }
+
+  #pricing {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    border: 2px solid;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    line-height: 2;
+    margin: 20px 0;
+  }
 }
