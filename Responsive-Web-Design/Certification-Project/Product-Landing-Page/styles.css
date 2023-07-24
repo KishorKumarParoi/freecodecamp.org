@@ -10,17 +10,29 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-#page-wrapper {
-  position: relative;
-}
-
 #header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0 20px;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  /* font-size: 20px; */
+  justify-content: space-around;
+  background-color: #eee;
+  align-items: center;
 }
 
-#logo {
-  width: 50%;
+.logo {
+  width: 60vw;
+}
+
+#nav-bar {
+  width: 40vw;
+}
+
+.logo img {
+  width: 20vw;
 }
 
 li {
@@ -28,10 +40,9 @@ li {
 }
 
 nav > ul {
-  width: 35vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container {
