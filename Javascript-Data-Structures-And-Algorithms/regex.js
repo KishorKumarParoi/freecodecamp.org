@@ -1,6 +1,5 @@
 const text = "#2A2A2A";
-const regex =
-    /(^#)([0-9{1}][a-zA-Z{1}])([0-9{1}][a-zA-Z{1}])([0-9{1}][a-zA-Z{1}])/g;
+const regex = /#+([0-9{1}][a-zA-Z{1}]){3}/g;
 
 const matches = text.match(regex);
 
